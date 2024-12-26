@@ -1,0 +1,6 @@
+.FormCriarTarefa {
+    gap: 0.5rem;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+}

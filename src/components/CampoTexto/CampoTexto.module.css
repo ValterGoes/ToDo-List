@@ -1,0 +1,8 @@
+.CampoTexto {
+    width: 25rem;
+    height: 2.5rem;
+    max-width: 100%;
+    border-radius: .25rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--preto);
+}

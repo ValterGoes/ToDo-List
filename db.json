@@ -1,0 +1,27 @@
+{
+  "tarefas": [
+    {
+      "nome": "JANTAR",
+      "id": 4
+    },
+    {
+      "nome": " tomar banho",
+      "id": 5,
+      "check": false
+    },
+    {
+      "nome": "lavar louça",
+      "id": 9,
+      "check": true
+    },
+    {
+      "nome": "SECAR A LOUÇA",
+      "id": 10,
+      "check": true
+    },
+    {
+      "nome": "GUARDAR A LOUÇA",
+      "id": 11
+    }
+  ]
+}
