@@ -1,3 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+html {
+    background: var(--cinza);
+    height: 100%;
+}
+
+body,
+input,
+textarea,
+button {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
 :root {
     --cinza: #EBEBEC;
     --preto: #191414;
@@ -9,23 +31,5 @@
     --darkRed: #c91010;
     --blue: #0078C7;
     --darkBlue: #0E577F;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: var(--cinza);
-    height: 100vh;
-}
-
-body,
-input,
-textarea,
-button {
-    font-size: 1rem;
-    font-family: sans-serif;
 }

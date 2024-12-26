@@ -7,7 +7,7 @@ const Rodape = () => {
     return (
       <div className={style.Footer}>
         <a href="https://react.dev/"> React Básico </a>
-        <p>- {anoAtual} -</p>
+        <span>- {anoAtual} -</span>
         <a href="https://www.linkedin.com/in/valtergoes/in">Valter Goes</a>
       </div>
     );

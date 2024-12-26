@@ -1,7 +1,6 @@
 .ListaTarefasItem {
     gap: 0.5rem;
     display: flex;
-    width: 28.5rem;
     font-size: 1.1rem;
     align-items: center;
     /* justify-content: space-between;  */
@@ -13,7 +12,7 @@ div .botoes{
 }
 
 p{
-    width: 21.4rem;
+    width: 18rem;
     max-width: 100%;
     line-height: 2rem;
     text-align: justify;
