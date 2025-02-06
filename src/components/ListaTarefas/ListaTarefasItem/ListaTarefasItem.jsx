@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Loading } from "../../Loading";
 import { useAppContext } from "../../../hooks";
 import style from "./ListaTarefasItem.module.css";
-import { Botao, CampoTexto, TIPO_BOTAO } from "../../../components";
+import { Botao, CampoTexto, TIPO_BOTAO, ID_BOTAO } from "../../../components";
 
 // Componente ListaTarefasItem
 const ListaTarefasItem = (props) => {
@@ -39,11 +39,7 @@ const ListaTarefasItem = (props) => {
     <div className={style.ListaTarefasItem}>
       <li>
         {(loadingEstaEditando || estaEditando) && (
-          <CampoTexto 
-            autoFocus 
-            defaultValue={nome} 
-            onBlur={onBlurTarefa} 
-          />
+          <CampoTexto autoFocus defaultValue={nome} onBlur={onBlurTarefa} />
         )}
 
         {loadingEstaEditando ||
@@ -55,15 +51,14 @@ const ListaTarefasItem = (props) => {
       </li>
       <div className={style.botoes}>
         <Botao
+          id={ID_BOTAO[check ? TIPO_BOTAO.TRUE : TIPO_BOTAO.FALSE]}
           onClick={() => alternarCheckTarefa(id)}
           tipo={check ? TIPO_BOTAO.TRUE : TIPO_BOTAO.FALSE}
           texto={
             loadingEstaCheck ? (
               <Loading />
             ) : check ? (
-              <span className="material-symbols-outlined">
-                task_alt
-              </span>
+              <span className="material-symbols-outlined">task_alt</span>
             ) : (
               <span className="material-symbols-outlined">
                 radio_button_unchecked
@@ -73,6 +68,7 @@ const ListaTarefasItem = (props) => {
         />
 
         <Botao
+          id={ID_BOTAO[TIPO_BOTAO.DELETE]}
           tipo={TIPO_BOTAO.DELETE}
           onClick={() => removerTarefas(id)}
           texto={
