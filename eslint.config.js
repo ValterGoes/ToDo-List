@@ -22,6 +22,10 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'cypress' : require.resolve('eslint-plugin-cypress'),
+    },
+    env: {
+      "cypress/globals": true
     },
     rules: {
       ...js.configs.recommended.rules,
